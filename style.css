@@ -1,0 +1,211 @@
+    :root{
+        --cor-principal: #906cfa;
+        --cor-realmente-principal: #d2b3ff;
+        --cor-section-dois: #b28cec;
+        --cor-border-section-dois: #784dbc;
+        --cor-secundaria: #15cce8;
+        --cor-header: #4d0080d4;
+        --cor-border: #4c0080;
+        --cor-header-texto: #d2b3ff;
+        --cor-texto-article: #2d0047;
+    }
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+
+
+    html, body{
+        height: 100%;
+        width: 100%;
+        scroll-behavior: smooth; 
+        background-color: var(--cor-principal);
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+
+    body {
+        gap: 20px;
+    }
+
+    article{
+        display: flex;
+        justify-content: center;
+        margin: 20px; 
+        height: auto;         
+        max-height: 700px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        margin: 20px;     
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+        padding: 2rem;     
+    }
+
+    main {
+        display: flex;      
+        flex-direction: row; 
+        flex-wrap: wrap;           
+        margin-top: 50px;
+        padding: 20px;  
+        margin-left: 40px;   
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        background-color: var(--cor-header);
+        color: var(--cor-header-texto);
+        box-shadow: -2px 2px 10px var(--cor-header);
+ 
+    }
+
+    aside{
+        background-color: #2d0047;
+        width: 15%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 1rem auto;
+        border: 6px solid var(--cor-border);
+        padding: 4px;
+    }
+
+    .linha-moldura-rosa {
+        background-color: var(--cor-realmente-principal);
+        border-radius: 20px;
+    }
+
+    .area-liz{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.5rem;
+
+        margin-top: 70px;
+        height: 50px;
+        width: 100%;
+        background-color: var(--cor-realmente-principal);
+    }
+
+    .nota-lateral{
+        font-size: 2rem;
+        margin: auto auto auto 1rem;
+        color: var(--cor-texto-article);
+
+    }
+    
+    #secao-raika{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .raika {
+        height: 280px;
+        flex: 1 0 200px;
+        margin: 2px;
+    }
+
+    #section-raika{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+
+    }
+
+    #raika-biografia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.4rem;
+        color: var(--cor-texto-article);
+        background-color: var(--cor-section-dois);
+
+        
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    #raika-biografia img{
+        border: 6px solid var(--cor-border-section-dois);
+    }   
+
+    #raika-bio-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 290px;
+        flex: 1 0 200px;
+    }
+
+    #titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        background-color: var(--cor-realmente-principal);
+    }
+
+    #section-geto{
+        margin-top: 120px;
+    }    
+
+    #nota-lateral-void{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+
+    #bigode{
+        width: 75%;
+    }
+
+    #hihi{
+        background-color: var(--cor-realmente-principal);
+    }
+
+    #notaVoide{
+        background-color: var(--cor-realmente-principal);
+        font-size: 1.5rem;
+        border: 4px solid var(--cor-realmente-principal);
+        border-radius: 10px;
+    }
+
+    .botao{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin:30px;
+        background-color: #15cce8;
+    }
+
+    
