@@ -68,8 +68,8 @@
     header{
         display: flex;
         align-items: center;
-        justify-content: center;
-        position: fixed;
+        justify-content: space-around;
+        position: absolute;
         top: 0;
         left: 0;
         height: 50px;
@@ -86,7 +86,11 @@
         height: 100%;
     }
 
-    img {
+    .botao-imagem{
+        width: 5rem;
+    }
+
+    .Artes {
         width: 100%;
         height: auto;
         margin: 1rem auto;
@@ -101,7 +105,7 @@
 
     .area-liz{ 
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
         font-size: 1.5rem;
@@ -111,6 +115,96 @@
         width: 100%;
         background-color: var(--cor-realmente-principal);
     }
+
+    .player{
+        width: 40%;
+        background-color: var(--cor-header);
+
+    }
+
+    :root {
+    --cor-principal: #906cfa;
+    --cor-realmente-principal: #d2b3ff;
+    --cor-section-dois: #b28cec;
+    --cor-border-section-dois: #784dbc;
+    --cor-secundaria: #15cce8;
+    --cor-header: #4d0080d4; /* Roxo já com transparência nativa */
+    --cor-border: #4c0080;
+    --cor-header-texto: #d2b3ff;
+    --cor-texto-article: #2d0047;
+}
+
+/* Container principal do player */
+    .player-container {
+      background-color: var(--cor-header); /* Fundo roxo transparente */
+      border: 2px solid var(--cor-border);
+      border-radius: 12px;
+      padding: 15px;
+      color: var(--cor-header-texto);
+      max-width: 500px;
+    }
+
+/* Barra de progresso / Linha do tempo */
+    .player-progress-bar {
+     background-color: var(--cor-section-dois);
+     border: 1px solid var(--cor-border-section-dois);
+     height: 8px;
+     border-radius: 4px;
+     overflow: hidden;
+     margin-bottom: 15px;
+    }
+
+/* O preenchimento da barra (o quanto o áudio/vídeo já rodou) */
+    .player-progress-current {  
+      background-color: var(--cor-secundaria); /* Destaque em ciano */
+      width: 45%; /* Exemplo de progresso */
+      height: 100%;
+    }
+
+/* Área dos botões de controle */
+    .player-controls {
+       display: flex;
+       gap: 10px;
+       align-items: center;
+    }
+
+/* Estilo dos botões (Play, Pause, Próximo) */
+    .player-btn {
+        background-color: var(--cor-principal);
+        border: 1px solid var(--cor-border-section-dois);
+        color: var(--cor-realmente-principal);
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.2s ease;
+    }
+
+    .player-btn:hover {
+        background-color: var(--cor-secundaria); /* Muda para ciano no hover */
+        color: var(--cor-texto-article); /* Texto escuro para dar contraste */
+        border-color: var(--cor-secundaria);
+    }
+
+
+    /* Remove a barra de digitação piscando de elementos que não são de texto */
+    body {
+       caret-color: transparent;
+    }
+
+/* Garante que elementos de layout e imagens não fiquem com foco de digitação */
+    div, section, img, header {
+        user-select: none;
+        -webkit-user-select: none; /* Safari */
+    }
+
+/* Mantém o cursor visível APENAS onde o usuário realmente precisa digitar (se houver) */
+    input, textarea {
+        caret-color: auto;
+        user-select: text;
+        -webkit-user-select: text;
+    }
+
 
     .nota-lateral{
         font-size: 2rem;
@@ -128,7 +222,10 @@
     .raika {
         height: 280px;
         flex: 1 0 200px;
-        margin: 2px;
+    
+        margin: 1rem auto;
+        border: 6px solid var(--cor-border);
+        padding: 4px;
     }
 
     #section-raika{
@@ -168,7 +265,7 @@
 
     #titulo{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         font-size: 3rem;
         background-color: var(--cor-realmente-principal);
@@ -204,8 +301,9 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin:30px;
-        background-color: #15cce8;
+        position: relative;
+        border: 0px;
+        width: 1%;
     }
 
     

@@ -113,14 +113,21 @@
 
     #notaVoide{
         background-color: var(--cor-realmente-principal);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         border: 4px solid var(--cor-realmente-principal);
         border-radius: 10px;
     }
 
-
     #finn{
         width: 100%;
+    }
+
+    #ashe{
+        width: 100%;
+    }
+
+    #medusa{
+        width: 65%;
     }
 
     #gash{
@@ -139,7 +146,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.8rem;
+        padding-top: 10px;
+        font-size: 2.5rem;
         color: beige;        
     }
 
