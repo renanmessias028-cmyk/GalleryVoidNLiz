@@ -65,7 +65,7 @@
         margin-left: 40px;   
     }
 
-    header{
+    header {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -117,7 +117,10 @@
     }
 
     .player{
-        width: 40%;
+        margin-top: 86%;
+        display: flex;
+        position: absolute;
+        width: 20%;
         background-color: var(--cor-header);
 
     }
@@ -236,6 +239,8 @@
 
     }
 
+
+
     #raika-biografia{
         display: flex;
         justify-content: center;
@@ -299,8 +304,8 @@
 
     .botao{
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: flex-end;
+        align-items: flex-end;
         position: relative;
         border: 0px;
         width: 1%;

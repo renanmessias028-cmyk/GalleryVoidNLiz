@@ -10,22 +10,54 @@
 <body>
     <header>
 
-     <a href="index2.html" class="botao"> <img src="Svg/LizButton(1).svg" class="botao-imagem"> </a>  
-     
+
      <h1>Liz's n Voided's Gallery</h1> 
      
-     <a href="index2.html" class="botao"> <img src="Svg/LizButton(1).svg" class="botao-imagem"> </a>
+     <a href="index2.html" class="botao" id="texto-botao-header"><img src="Svg/Ilustração2.png" class="botao-imagem"> </a>
     
+     
 
     </header>
 
     <h2 class="area-liz" id="titulo">Artes da Liz     
-    <audio preload= "metadata" class="player" autoplay controls loop>
-        <source src="audio/Hip Shop.mp3" type="audio/mpeg" class="player">
+    <!-- Ajustado com o id="player" correto e o src inicial da playlist -->
+    <audio preload="metadata" id="player" class="player" src="audio/pareprapensar.mp3" autoplay controls>
         Seu navegador não suporta o elemento de áudio.
     </audio>
-            
+    
+    <script>
+      // 1. Sua lista de músicas (caminho dos arquivos)
+      const playlist = [
+        "audio/pareprapensar.mp3",
+        "audio/escapismo.mp3",
+        "audio/Hip Shop.mp3"
+      ];
+      
+      // 2. Controladores de estado
+      let indiceAtual = 0;
+      const player = document.getElementById("player");
+
+      // 3. Ouvir o evento de término da música
+      player.addEventListener("ended", function() {
+        // Avança para a próxima música
+        indiceAtual++;
+
+        // Se chegar ao fim da playlist, volta para a primeira
+        if (indiceAtual >= playlist.length) {
+          indiceAtual = 0; 
+        }
+
+        // Atualiza a origem do player com a nova música
+        player.src = playlist[indiceAtual];
+
+        // Dá o play automaticamente e trata possíveis bloqueios de autoplay do navegador
+        player.play().catch(error => {
+          console.log("Autoplay bloqueado pelo navegador. Aguardando clique do usuário.");
+        });
+      });
+    </script>       
     </h2>
+
 
 
 

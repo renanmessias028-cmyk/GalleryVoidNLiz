@@ -59,12 +59,11 @@
         padding: 20px;  
         margin-left: 40px;   
     }
-
-    header{
+    header {
         display: flex;
         align-items: center;
-        justify-content: center;
-        position: fixed;
+        justify-content: space-around;
+        position: absolute;
         top: 0;
         left: 0;
         height: 50px;
@@ -78,9 +77,13 @@
         width: 80%;
         height: auto;
         margin: 1rem auto;
-        border: 6px solid var(--cor-border);
+
         padding: 4px;
         
+    }
+
+    section img{
+        border: 6px solid var(--cor-border);
     }
 
     
@@ -142,6 +145,15 @@
         font-size: 1.8rem;
     }
 
+        .player{
+        margin-top: 86%;
+        display: flex;
+        position: absolute;
+        width: 20%;
+        background-color: var(--cor-header);
+
+    }
+
     #concept-titulo{
         display: flex;
         justify-content: center;
@@ -168,12 +180,19 @@
         width: 90%;
     }
 
-        .botao{
+    .botao{
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin:30px;
-        background-color: #15cce8;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        border: 0px;
+        width: 1%;
     }
 
+        .botao-imagem{
+        width: 5rem;
+    }
+
+
+    
     
