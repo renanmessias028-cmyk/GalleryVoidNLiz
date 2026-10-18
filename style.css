@@ -76,6 +76,7 @@
         background-color: var(--cor-header);
         color: var(--cor-header-texto);
         box-shadow: -2px 2px 10px var(--cor-header);
+        font-family: 'Alagard'
     }
 
     aside{
@@ -197,7 +198,7 @@
         font-size: 2rem;
         margin: auto auto auto 1rem;
         color: var(--cor-texto-article);
-
+        font-family: 'Blue Screen Personal Use';
     }
     
     #secao-raika{
@@ -250,6 +251,7 @@
         align-items: center;
         height: 290px;
         flex: 1 0 200px;
+        font-family: 'Blue Screen Personal Use';
     }
 
     #titulo{
@@ -258,6 +260,7 @@
         align-items: center;
         font-size: 3rem;
         background-color: var(--cor-realmente-principal);
+        font-family: 'Alagard'
     }
 
     #section-geto{
@@ -269,6 +272,7 @@
         justify-content: center;
         align-items: center;
         font-size: 1.6rem;
+        font-family: 'Blue Screen Personal Use';
     }
 
     #bigode{
@@ -284,6 +288,7 @@
         font-size: 1.5rem;
         border: 4px solid var(--cor-realmente-principal);
         border-radius: 10px;
+        font-family: 'Blue Screen Personal Use';
     }
 
     .botao{
