@@ -133,17 +133,18 @@
         width: 65%;
     }
 
-    #gash{
-        background-color: var(--cor-realmente-principal);
-    }
 
+    #annie{
+        width: 90% ;
+    }
     
     #bio-text{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
+
 
         .player{
         margin-top: 86%;
@@ -190,7 +191,7 @@
     }
 
         .botao-imagem{
-        width: 5rem;
+        width: 5.4rem;
     }
 
 

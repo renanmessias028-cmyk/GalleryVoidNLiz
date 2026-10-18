@@ -6,47 +6,45 @@
     <title>Liz's n Voided's Gallery</title>
     <link rel="stylesheet" href="style2.css">
 </head>
+
 <body>
     <header>
     <h1>Liz's n Voided's Gallery</h1>
-    <a href="index.html" class="botao" ><img src="Svg/Ilustração2.png" class="botao-imagem"> </a>
+    <a href="index.html" class="botao" ><img src="Svg/3.png" class="botao-imagem"> </a>
 
     </header>
     <aside>
     </aside>
     
     <h2 class="area-void" id="titulo">Artes do Void
-         <!-- Ajustado com o id="player" correto e o src inicial da playlist -->
-    <audio preload="metadata" id="player" class="player" src="audio/pareprapensar.mp3" autoplay controls>
+ 
+    <audio preload="metadata" id="player" class="player" src="audio/core.mp3" autoplay controls>
         Seu navegador não suporta o elemento de áudio.
     </audio>
     
     <script>
-      // 1. Sua lista de músicas (caminho dos arquivos)
+
       const playlist = [
-        "audio/pareprapensar.mp3",
-        "audio/escapismo.mp3",
-        "audio/Hip Shop.mp3"
+        "audio/GarnetFusion.mp3",
+        "audio/For the King.mp3",
+        "audio/core.mp3"
       ];
       
-      // 2. Controladores de estado
+  
       let indiceAtual = 0;
       const player = document.getElementById("player");
 
-      // 3. Ouvir o evento de término da música
+
       player.addEventListener("ended", function() {
-        // Avança para a próxima música
+  
         indiceAtual++;
 
-        // Se chegar ao fim da playlist, volta para a primeira
         if (indiceAtual >= playlist.length) {
           indiceAtual = 0; 
         }
 
-        // Atualiza a origem do player com a nova música
         player.src = playlist[indiceAtual];
 
-        // Dá o play automaticamente e trata possíveis bloqueios de autoplay do navegador
         player.play().catch(error => {
           console.log("Autoplay bloqueado pelo navegador. Aguardando clique do usuário.");
         });
@@ -133,17 +131,19 @@
 
      <section class="linha-moldura-rosa">
         <article>
-            <img src="Void/Annie.png" alt="">
+            <img src="Void/Annie.png" id="annie">
         </article>
-        <p1 id="bio-text">Essa é a Annie. ELa é de uma história minha onde um apocalipse causado por um deus raivoso amaldiçoou toda a terra, mandando um dragão feito de raizes que vê, ouve, e muito provavélmente, sabe de tudo. Ela é uma menina autêntica e usa da sua motosserra para matar raizés vivas, além de usar as propias como combustivél.</p1>
+        <p1 id="bio-text">Essa é a Annie. Ela é de uma história minha onde um apocalipse causado por um deus raivoso amaldiçoou toda a terra, mandando um dragão feito de raizes que vê, ouve, e muito provavélmente, sabe de tudo. Ela é uma menina autêntica e usa da sua motosserra para matar raizés vivas, além de usar as propias como combustivél.</p1>
      </section>
 
       <h1 id="concept-titulo">Concept Child of Dove</h1>
 
-     <section>
+     <section class="linha-moldura-rosa">
         <article>
             <img src="Void/doveconcept.png" alt="">
-        </article>       
+        </article>      
+          <p1 id="bio-text">Esse é Dove, a cria da pomba, no começo do jogo, el* não sabe de nada, a unica coisa pe andar e pular, mas coisas basicas como falar, ou escrever são (no inico do jogo) complexas demais pra el*</p1>
+     
      </section>
 
         <h1 id="concept-titulo">Concept Jossiel (Até agora, não usada)</h1> 
@@ -190,8 +190,20 @@
         <article>
             <img src="Void/bdragonConcept.png" alt="">
         </article>    
+           </section>
+
+    <section>
+        <article>
+            <img src="Void/RedDragon2.png" id="reddragon2">
+        </article> 
+        
+        <article>
+            <img src="Void/BlueDragon2.png" alt="">
+        </article>
+        
         <h1>Esses sãos os desings do projeto que eu e o Reobe estamos fazendo, eu to cuidando de todas as partes artisticas, A imagems ao lado é um dos personagens jogavéis.</h1>
-    </section>
+
+    </section>  
 
     <h6 id="titulo">Seção Da Liz</h6>
 
