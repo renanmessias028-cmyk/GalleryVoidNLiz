@@ -1,16 +1,14 @@
 :root{
-        --cor-principal: #6c76e9;
-        --cor-realmente-principal: #bdc5ff;
-        --cor-section-dois: #c8a4ff;
+        --cor-principal: #906cfa;
+        --cor-realmente-principal: #d2b3ff;
+        --cor-section-dois: #b28cec;
         --cor-border-section-dois: #784dbc;
         --cor-secundaria: #15cce8;
-        --cor-header: #1851adb9;
-        --cor-border: #1f2e68;
-        --cor-header-texto: #b9c9ff;
+        --cor-header: #4d0080d4;
+        --cor-border: #4c0080;
+        --cor-header-texto: #d2b3ff;
         --cor-texto-article: #2d0047;
     }
-
-
     *{
         padding: 0;
         margin: 0;
@@ -45,7 +43,7 @@
         justify-content: center;
         align-items: center;        
         margin: 20px;     
-        width: 100%;
+        width: 97%;
         height: auto;
         max-height: 700px;
         padding: 2rem;     
@@ -93,6 +91,24 @@
         border-radius: 20px;
     }
 
+    #section-annie{
+        margin-bottom: 90px;
+    }
+
+    .bio-animacao{
+        width: 60%;
+    
+    }
+
+    #animacaoChasing{
+        width: 150%;
+    }
+
+    #bbdragon{
+        display: flex;
+        flex-direction: row;
+    }
+
     .area-void{ 
         display: flex;
         justify-content: center;
@@ -118,11 +134,47 @@
         background-color: var(--cor-realmente-principal);
         font-size: 1.3rem;
         border: 4px solid var(--cor-realmente-principal);
-        border-radius: 10px;
+        border-radius: 10px;        
+    }
+
+    #ashe-article{
+        padding-bottom: 2px;
+    }
+
+    #bio-ashe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1px;
+        width: 30%;
+        gap: 10px;
+
+    }
+
+
+    #bio-erwin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1px;
+        width: 80%;
+        gap: 10px;
+    }
+
+    #section-erwin{
+        display: flex;
+        justify-content: center ;
+        gap: 3px;
+        width: 97%
+    }   
+
+    .notaerwin{
+        width: 100%;
+
     }
 
     #finn{
-        width: 100%;
+        width: 120%;
     }
 
     #ashe{
@@ -133,6 +185,13 @@
         width: 65%;
     }
 
+    #chefe{
+        width: 200%;
+    }
+
+    #gash-rosto{
+        width: 100%;
+    }
 
     #annie{
         width: 90% ;
@@ -145,6 +204,26 @@
         font-size: 1.4rem;
     }
 
+    #bio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--cor-realmente-principal);
+        font-size: 1.4rem;
+        border: 4px solid var(--cor-realmente-principal);
+        border-radius: 10px;
+    }    
+    
+
+
+    #bio-text-gash{
+        display: flex;
+        flex-direction:column;   
+        font-size: 1.4rem;
+        gap: 20px;
+    }
+
+
 
         .player{
         margin-top: 86%;
@@ -154,6 +233,8 @@
         background-color: var(--cor-header);
 
     }
+
+
 
     #concept-titulo{
         display: flex;
@@ -180,6 +261,11 @@
     #jamal{
         width: 90%;
     }
+
+    #jossiel-img{
+        width: 129%;
+    }
+    
 
     .botao{
         display: flex;
