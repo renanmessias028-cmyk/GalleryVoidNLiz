@@ -5,52 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liz's n Voided's Gallery</title>
     <link rel="stylesheet" href="style.css">
-
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shalimar&family=Silkscreen:wght@400;700&display=swap');
+    </style>
 </head>
 <body>
     <header>
 
-
-     <h1>Liz's n Voided's Gallery</h1> 
+    <audio preload="metadata" id="player" class="player" src="audio/escapismo.mp3" autoplay controls>
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <h1 id="titulo-home">Liz's n Voided's Gallery</h1> 
      
-     <a href="index2.html" class="botao" id="texto-botao-header"><img src="Svg/Ilustração2.png" class="botao-imagem"> </a>
+    <a href="index2.html" class="botao" id="texto-botao-header"><img src="Svg/Ilustração2.png" class="botao-imagem"> </a>
     
      
 
     </header>
 
     <h2 class="area-liz" id="titulo">Artes da Liz     
-    <!-- Ajustado com o id="player" correto e o src inicial da playlist -->
-    <audio preload="metadata" id="player" class="player" src="audio/escapismo.mp3" autoplay controls>
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
+   
     
     <script>
-      // 1. Sua lista de músicas (caminho dos arquivos)
       const playlist = [
         "audio/pareprapensar.mp3",
         "audio/escapismo.mp3",
         "audio/Hip Shop.mp3"
       ];
       
-      // 2. Controladores de estado
+    
       let indiceAtual = 0;
       const player = document.getElementById("player");
 
-      // 3. Ouvir o evento de término da música
+    
       player.addEventListener("ended", function() {
-        // Avança para a próxima música
         indiceAtual++;
 
-        // Se chegar ao fim da playlist, volta para a primeira
         if (indiceAtual >= playlist.length) {
           indiceAtual = 0; 
         }
 
-        // Atualiza a origem do player com a nova música
         player.src = playlist[indiceAtual];
 
-        // Dá o play automaticamente e trata possíveis bloqueios de autoplay do navegador
         player.play().catch(error => {
           console.log("Autoplay bloqueado pelo navegador. Aguardando clique do usuário.");
         });
@@ -81,7 +77,7 @@
         </article> 
 
         <article>
-            <img src="img/LizReducer/desing.jpg" class= "Artes"> 
+            <img src="img/LizReducer/desing.jpg" id="ocOrdem" class= "Artes"> 
             <p class="nota-lateral">Void: Eu achei esses desing's MUITO BONS! Eles estão bem feitos e bem elaborados, principalmente a segunda garota, eu achei o visual dele muito bom e me lembra um pouco de ordem paranormal.</p>
         </article>
     </section> 
@@ -115,9 +111,9 @@
             <img src="img/LizReducer/RaikaRPG.jpeg"class="raika">
         </article>
 
-        <h4 id="titulo">Biografia da Raika</h4>
+    <h4 id="titulo">Biografia da Raika</h4>
 
-         <section id="raika-biografia">   
+        <section id="raika-biografia">   
             <article>
                 <img src="img/LizReducer/aot.jpeg" class="raika">
             </article>
@@ -143,7 +139,8 @@
         </section>    
 
         
-        <h5 id="titulo">Seção do Void</h5>
+    <h5 id="titulo">Seção do Void</h5>
+    
     <section class="linha-moldura-rosa">
             <article>
                 <img src="img/LizReducer/tracer.jpg" class= "Artes">
@@ -152,10 +149,8 @@
                 <img src="img/LizReducer/ashe.jpg" class= "Artes">
             </article>
             <article>
-                <img src="img/LizReducer/amelie.jpg" class= "Artes">
-               
+                <img src="img/LizReducer/amelie.jpg" class= "Artes">           
             </article>
-
     </section>
     
     <h6 id="titulo">Nota do Void</h6>
