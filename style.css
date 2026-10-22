@@ -78,6 +78,12 @@
         box-shadow: -2px 2px 10px var(--cor-header);
         font-family: 'Silkscreen', sans-serif
     }
+    
+        #botao-home{
+        margin-top: 20%;
+        margin-left: 45%;      
+        font-family: 'Silkscreen', sans-serif ;
+    }
 
         #titulo-home{
         display: flex;

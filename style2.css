@@ -140,6 +140,12 @@
         background-color: var(--cor-realmente-principal);
     }
 
+    #botao-home{
+        margin-top: 20%;
+        margin-left: 45%;      
+        font-family: 'Silkscreen', sans-serif ;
+    }
+    
     #titulo{
         display: flex;
         justify-content: center;
