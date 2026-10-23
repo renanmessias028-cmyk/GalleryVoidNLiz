@@ -105,12 +105,22 @@
         background-color: var(--cor-border-section-dois);
         border: 30px solid var(--cor-border-section-dois);
         border-radius: 20px;
+        width: 50%;
     }
 
-    #botao-liz{
-       
+    #botao-text{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+       align-self: center;
     }
 
     #liz{
-        width: 10%;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+        width: 25%;
     }
+
+    
